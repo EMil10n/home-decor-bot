@@ -92,7 +92,7 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Parašyk 1️⃣, 2️⃣ arba 3️⃣, kad galėčiau padėti!")
 
 # --- Init ---
-app = ApplicationBuilder().token("8011999115:AAGemoID9kZ9rgPFuv5Jpsu6iz0xnvGnKh0").build()
+app = ApplicationBuilder().token("8011999115:AA...tvojtoken").build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, message_handler))
 
